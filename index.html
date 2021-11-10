@@ -10,7 +10,109 @@
 </head>
 <body>
 
+  <main>
+    <div class="container">
 
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <div>
+          <label for="fullname-input">Ism-familiya</label>
+          <input type="text"  name="fullname" id="fullname-input" placeholder="ism-familiya" required>
+
+
+        </div>
+        <div>
+          <label for="dob-input">Ism-familiya</label>
+          <input type="date" name="fullname" id="dob-input" placeholder="tug`ilgan sana" required>
+        </div>
+
+        <div>
+          <label for="course-type-select">Kurs turi</label>
+          <select name="course-type" id="course-type-select">
+            <optgroup label="oflayn darslar">
+              <option value="morning">Ertalabki</option>
+              <option value="afternoon">Peshingi</option>
+              <option value="evening" disabled>Kechki-paytki </option>
+            </optgroup>
+            <optgroup label="onlayn darslar">
+              <option value="standart" selected>standart</option>
+              <option value="pro">pro</option>
+            </optgroup>
+          </select>
+
+        </div>
+        <!-- button bn fieldset ga "flex box" ishlamedi -->
+        <div>
+          <fieldset>
+            <legend>Qo`shimcha xizmatlar</legend>
+            <label>
+              <input type="checkbox" name="laptop"> Laptop
+            </label>
+            <label>
+              <input type="checkbox" name="monitor"> Monitor
+            </label>
+            <label>
+              <input type="checkbox" name="internet"> Internet
+            </label>
+
+          </fieldset>
+        </div>
+
+
+        <div>
+          <fieldset>
+            <legend>To`lov usuli</legend>
+            <label>
+              <input type="radio" name="payment_type" value="cash">Naqd
+            </label>
+            <label>
+              <input type="radio" name="payment_type" value="terminal">Terminal
+            </label>
+            <label>
+              <input type="radio" name="payment_type" value="payme">Payme
+            </label>
+            <label>
+              <input type="radio" name="payment_type" value="Click">Click
+            </label>
+          </fieldset>
+        </div>
+
+        <div>
+          <label for="district-input">viloyat</label>
+          <input type="text" name="district" id="district-input" list="districts-list" placeholder="Viloyat" required>
+
+          <datalist id="districts-list">
+            <option>Andijon </option>
+            <option>Buxoro  </option>
+            <option>Fargʻona</option>
+            <option>Jizzax </option>
+            <option>Namangan</option>
+            <option>Navoiy </option>
+            <option>Qashqadaryo </option>
+            <option>Samarqand</option>
+            <option>Sirdaryo </option>
+            <option>Surxondaryo </option>
+            <option>Toshkent </option>
+            <option>Xorazm </option>
+          </datalist>
+
+        </div>
+
+        <!-- <div>
+          <label for="message-input">Xabar</label>
+          <textarea name="message" id="message-input" cols="30" rows="10"></textarea>
+        </div> -->
+
+        <div>
+          <label for="message-input">Xabar</label>
+          <textarea name="message" id="message-input" placeholder="Xabar" required></textarea>
+        </div>
+        <button>Ro`yxatdan o`tish</button>
+      </form>
+    </div>
+
+
+  </main>
 
 
 </body>

@@ -1,0 +1,14 @@
+
+div{
+  padding: 10px;
+}
+.container{
+  margin-left: 50px;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  resize: vertical;
+}
